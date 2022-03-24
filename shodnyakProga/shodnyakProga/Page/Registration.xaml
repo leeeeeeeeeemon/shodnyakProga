@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="shodnyakProga.Page.Registration">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Margin="50, 10, 50, 0" Text="Name" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="AddNameInput"/>
+                </Frame>
+
+                <Label Margin="50, 10, 50, 0" Text="Surname" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="AddSSurnameInput"/>
+                </Frame>
+
+                <Label Margin="50, 10, 50, 0" Text="Date of birth" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="AddDateInput"/>
+                </Frame>
+
+                <Label Margin="50, 10, 50, 0" Text="Password" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="AddPasswordInput" IsPassword="True"/>
+                </Frame>
+
+                <Label Margin="50, 10, 50, 0" Text="Confirm password" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="RepeatPasswordInput" IsPassword="True"/>
+                </Frame>
+            </StackLayout>
+            <Button CornerRadius="8" Margin="50, 30, 50, 0" TextColor="#703030" Text="Registrate" x:Name="RegistrateButton"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

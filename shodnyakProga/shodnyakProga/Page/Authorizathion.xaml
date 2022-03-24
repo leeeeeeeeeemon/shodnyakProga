@@ -3,26 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shodnyak.Page.Authorizathion">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" Spacing="50" Padding="30">
-            <StackLayout VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
-                <Label Text="ONLY CATS.COM"  FontSize="35"
-                HorizontalOptions="CenterAndExpand" />
-                <Label Text="here you can look after yourself a hot kitty" FontSize="Subtitle" HorizontalOptions="CenterAndExpand"/>
+        <StackLayout BackgroundColor="White">
+            <Image Source="ShodnyakLogo.png" Margin="50, 0, 50, 0"/>
+            <StackLayout>
+                <Label Margin="50, 0, 50, 5" Text="Login" TextColor="#703030"/>
+                <Frame CornerRadius="8"  BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5" Padding="0">
+                    <Entry x:Name="LoginInput"/>
+                </Frame>
             </StackLayout>
-            <StackLayout Spacing="30" >
-                <StackLayout>
-                    <Label Text="Email"  TextColor="black" FontSize="Large"></Label>
-                    <Entry x:Name="loginEntry"/>
-                </StackLayout>
-                <StackLayout>
-                    <Label Text="Password" TextColor="black" FontSize="Large"></Label>
-                    <Entry x:Name="passwordEntry" IsPassword ="True" />
-                </StackLayout>
+            <StackLayout>
+                <Label Margin="50, 10, 50, 5" Text="Password" TextColor="#703030"/>
+                <Frame CornerRadius="8" BackgroundColor="#c4c4c4" Margin="50, 0, 50, 5"  Padding="0">
+                    <Entry x:Name="PasswordInput"  IsPassword="True"/>
+                </Frame>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" >
-                <Button Text="Sign in" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Sign up" HorizontalOptions="FillAndExpand"></Button>
+            <StackLayout Margin="15" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button CornerRadius="8" Margin="0, 10, 50, 0" Text="Let's go!" TextColor="#703030"/>
+                <Button CornerRadius="8" Margin="0, 10, 0, 0"  Text="Registration" TextColor="#703030"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
